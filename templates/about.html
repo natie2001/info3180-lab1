@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
 <meta charset="UTF-8">
 <title>My Website - About</title>
 </head>
 <body>
 <h1>Nathan Hansle</h1>
-<p>I’m a computer science student who enjoys problem-solving and building things that actually work and matter. Outside of school, I spend a lot of my free time gaming, which I enjoy both for fun and for the strategic thinking it involves. I also play tennis, which helps me stay active and disciplined while giving me a good balance from screen time. Overall, I’m someone who likes to challenge myself, improve my skills, and grow both mentally and physically.</p>
+<img
+  src="{{ url_for('static', filename='porsche.jpg') }}"
+  alt="Profile image of Nathan Hansle"
+  class="profile-image"
+/>
+<p>I’m a computer science student who enjoys problem-solving and building things. Outside of school, I am passionate about cars. I also spend a lot of my free time gaming, which I enjoy both for fun and for the strategic thinking it involves. Additionally, I play tennis, which helps me stay active and disciplined while giving me a good balance from screen time. Overall, I’m someone who likes to challenge myself, improve my skills, and grow both mentally and physically.</p>
 </body>
 </html>
